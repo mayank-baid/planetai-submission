@@ -1,0 +1,78 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    max-width: 120px;
+}
+
+.upload-btn {
+    display: flex;
+    align-items: center;
+}
+
+.upload-btn label {
+    cursor: pointer;
+    padding: 0.2em 2.5em;
+    border: 1px solid black;
+    background-color: #fff;
+    /* color: #fff; */
+    border-radius: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.upload-btn label:hover {
+    background-color: #ededed;
+}
+
+.pdf-input-add-btn {
+    margin-right: 10px;
+}
+
+.pdf-details {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin-right: 15px;
+    color: green;
+}
+
+.pdf-details img {
+    margin: 0 5px;
+}
+
+.pdf-input {
+    display: flex;
+    align-items: center;
+}
+
+.pdf-input-text {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.8rem 1rem;
+    }
+
+
+    .pdf-input-text {
+        display: none;
+    }
+
+    .upload-btn label {
+        padding: 0.2em 0.5em;
+        border-radius: 0.7rem;
+    }
+
+    .pdf-input-add-btn {
+        margin: 10px;
+    }
+
+}

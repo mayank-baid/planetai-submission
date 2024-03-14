@@ -1,0 +1,6 @@
+# Ignore node_modules directory
+frontend/pdf/node_modules/
+backend/api/__pycache__
+backend/api/uploaded_pdfs
+backend/api/.env
+backend/api/*.db

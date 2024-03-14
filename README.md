@@ -20,7 +20,38 @@ Clone/Download the repository to your local machine.
     cd backend/api
     ```
 
-   Install backend dependencies using npm:
+2. **Create the virtual environment**
+   Run the following command to create a virtual environment named "myenv":
+   
+   **For Windows:**
+   ```cmd
+   python -m venv myenv
+   ```
+   
+   **For macOS and Linux:**
+   ```bash
+   python3 -m venv myenv
+   ```
+   
+   This will create a directory named `myenv` in your project folder which will contain a Python interpreter and other necessary files for the virtual environment.
+   
+   ### Activate the virtual environment
+   Activating the virtual environment ensures that any Python-related commands (e.g., `python`, `pip`) you run will use the environment's Python interpreter and packages. Run the appropriate activation script for your operating system:
+   
+   **For Windows:**
+   ```cmd
+   myenv\Scripts\activate
+   ```
+   
+   **For macOS and Linux:**
+   ```bash
+   source myenv/bin/activate
+   ```
+   
+   After activating the environment, you'll notice that the command prompt changes, indicating that you're now working within the virtual environment.
+
+
+3. **Install backend dependencies using npm:**
 
     ```
     pip install -r requirements.txt
@@ -28,7 +59,7 @@ Clone/Download the repository to your local machine.
 
     This command installs all the required Python dependencies specified in the `requirements.txt` file. Make sure to execute this command from the `backend/api` directory.
 
-2. **Environment Variables**
+4. **Environment Variables**
 
     Create a `.env` file in the `backend/api` directory with the following variables, you can also check the `.env example` file:
 
@@ -39,7 +70,7 @@ Clone/Download the repository to your local machine.
     # OpenAI Credentials (if using OpenAI)
     OPENAI_API_KEY=your_open_ai_api_key
 
-4. **Running the Backend Server**
+5. **Running the Backend Server**
 
     After installing the dependencies and setting up the environment variables, start the backend server using the following command:
 
